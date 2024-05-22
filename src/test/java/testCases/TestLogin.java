@@ -67,20 +67,19 @@ public class TestLogin extends BrowserSetup {
 
         Actions actions = new Actions(getBrowser());
         shippingPage.clickOnElement(shippingPage.selectDistrict);
-        actions.sendKeys(Keys.ARROW_DOWN).build().perform();
-        actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         shippingPage.clickOnElement(shippingPage.selectDistrict);
-
+        Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.selectArea);
+        actions.sendKeys(Keys.ARROW_DOWN).build().perform();
+        actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         shippingPage.clickOnElement(shippingPage.selectArea);
         shippingPage.writeElement(shippingPage.addressInputBox, shippingPage.address);
-        Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.shippingChargeCourier);
         Thread.sleep(2000);
-        shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
-        Thread.sleep(2000);
+//        shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
+//        Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.paymentOption);
 
 

@@ -38,7 +38,7 @@ public class BasePage {
 
 
     public  Alert getAlert (){
-        WebDriverWait wait = new WebDriverWait(getBrowser(), Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(getBrowser(), Duration.ofSeconds(5));
         return wait.until(ExpectedConditions.alertIsPresent());
     }
     public void addScreenshot(String name){

@@ -20,6 +20,6 @@ public class ShippingPage extends BasePage{
     public By paymentOption = By.xpath("//input[@id='payment_method_bkash']");
     public By myAccountButton = By.xpath("//div[@class='login-links']//a[@title='আমার অ্যাকাউন্ট'][contains(text(),'আমার অ্যাকাউন্ট')]");
     public By logOutButton = By.xpath("//a[contains(text(),'লগআউট')]");
-    public By shippingChargeCourier = By.xpath("//input[@id='shipping_method_0_flat_rate2']");
-    public By getShippingChargePostOffice = By.xpath("//input[@id='shipping_method_0_flat_rate12']");
+    public By shippingChargeCourier = By.xpath("//input[@id='shipping_method_0_flat_rate8']");
+//    public By getShippingChargePostOffice = By.xpath("//input[@id='shipping_method_0_flat_rate12']");
 }
