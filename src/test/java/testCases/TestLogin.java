@@ -4,8 +4,10 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,6 +15,8 @@ import pages.HomePage;
 import pages.LogInPage;
 import pages.ShippingPage;
 import utilities.BrowserSetup;
+
+import java.time.Duration;
 
 public class TestLogin extends BrowserSetup {
 
@@ -57,27 +61,25 @@ public class TestLogin extends BrowserSetup {
     @Test(priority = 1)
     public void testShippingWithValidCredentials() throws InterruptedException {
 
-//        getBrowser().get(shippingPage.shippingUrl);
-
         shippingPage.writeElement(shippingPage.nameInputBox, shippingPage.name);
         shippingPage.writeElement(shippingPage.phoneNumberInputBox, shippingPage.phoneNumber);
         shippingPage.writeElement(shippingPage.emailInputBox, shippingPage.email);
-        Thread.sleep(5000);
 
         Actions actions = new Actions(getBrowser());
         shippingPage.clickOnElement(shippingPage.selectDistrict);
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         shippingPage.clickOnElement(shippingPage.selectDistrict);
-        Thread.sleep(5000);
 
         shippingPage.clickOnElement(shippingPage.selectArea);
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         actions.sendKeys(Keys.ARROW_DOWN).build().perform();
         shippingPage.clickOnElement(shippingPage.selectArea);
-
-        Thread.sleep(2000);
         shippingPage.writeElement(shippingPage.addressInputBox, shippingPage.address);
+        Thread.sleep(2000);
+        shippingPage.clickOnElement(shippingPage.shippingChargeCourier);
+        Thread.sleep(2000);
+        shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
         Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.paymentOption);
 
