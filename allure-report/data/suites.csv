@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu May 23 02:23:44 BDT 2024","Thu May 23 02:23:48 BDT 2024","3786","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testLogout","testLogout",""
-"passed","Thu May 23 02:23:30 BDT 2024","Thu May 23 02:23:44 BDT 2024","14663","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testShippingWithValidCredentials","testShippingWithValidCredentials",""
-"passed","Thu May 23 02:23:20 BDT 2024","Thu May 23 02:23:30 BDT 2024","9892","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testLoginWithValidCredentials","User Login with Valid Credentials","Test Add using Allure :User Login with Valid Credentials"
+"passed","Thu May 23 02:59:54 BDT 2024","Thu May 23 02:59:57 BDT 2024","3706","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testLogout","testLogout",""
+"passed","Thu May 23 02:59:37 BDT 2024","Thu May 23 02:59:47 BDT 2024","9923","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testLoginWithValidCredentials","User Login with Valid Credentials","Test Add using Allure :User Login with Valid Credentials"
+"passed","Thu May 23 02:59:47 BDT 2024","Thu May 23 02:59:54 BDT 2024","6777","Default Suite","WafilifeAutomationTest","testCases.TestLogin","testCases.TestLogin","testShippingWithValidCredentials","testShippingWithValidCredentials",""
