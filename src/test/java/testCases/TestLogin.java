@@ -77,7 +77,6 @@ public class TestLogin extends BrowserSetup {
         shippingPage.clickOnElement(shippingPage.selectArea);
         shippingPage.writeElement(shippingPage.addressInputBox, shippingPage.address);
         shippingPage.clickOnElement(shippingPage.shippingChargeCourier);
-        Thread.sleep(2000);
 //        shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
 //        Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.paymentOption);
