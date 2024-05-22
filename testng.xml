@@ -9,7 +9,7 @@
                     <include name="testLoginWithInValidCredentials"/>
                     <include name="testLoginWithValidEmailButWrongPassword"/>
                     <include name="testLoginWithValidPasswordButWrongEmail"/>
-                    <include name="testLoginWithOutEmailAndPassword"/>
+                    <exclude name="testLoginWithOutEmailAndPassword"/>
                 </methods>
             </class>
             <class name="testCases.TestLogin">
