@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1674d824-bc77-427a-9465-1aa25b42c336" name="Changes" comment="WafilifeAutomationTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testCases/TestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShippingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testCases/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCases/TestLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,6 +58,9 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.D:/JetBrains/WafilifeAutomationTest/testng.xml.executor": "Run",
+    "TestNG.TestCases.executor": "Run",
+    "TestNG.TestCases.testLoginWithValidEmailAndWrongPassword.executor": "Run",
+    "TestNG.TestCases.testLoginWithValidPasswordButWrongEmail.executor": "Run",
     "TestNG.TestLogin.executor": "Run",
     "TestNG.TestLogin.testLoginWithValidCredentials.executor": "Run",
     "git-widget-placeholder": "main",
@@ -69,19 +81,54 @@
       <recent name="D:\JetBrains\WafilifeAutomationTest\src\test\java\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestLogin">
-    <configuration name="All in WafilifeAutomationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestCases">
+    <configuration name="TestCases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WafilifeAutomationTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.TestCases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/JetBrains/WafilifeAutomationTest/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases.testLoginWithValidEmailAndWrongPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WafilifeAutomationTest" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.TestCases" />
+      <option name="METHOD_NAME" value="testLoginWithValidEmailAndWrongPassword" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testLoginWithValidPasswordButWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WafilifeAutomationTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testCases" />
+      <option name="MAIN_CLASS_NAME" value="testCases.TestCases" />
+      <option name="METHOD_NAME" value="testLoginWithValidPasswordButWrongEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -125,10 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestCases" />
+        <item itemvalue="TestNG.TestCases.testLoginWithValidPasswordButWrongEmail" />
+        <item itemvalue="TestNG.TestCases.testLoginWithValidEmailAndWrongPassword" />
         <item itemvalue="TestNG.TestLogin" />
         <item itemvalue="TestNG.TestLogin.testLoginWithValidCredentials" />
-        <item itemvalue="TestNG.D:/JetBrains/WafilifeAutomationTest/testng.xml" />
-        <item itemvalue="JUnit.All in WafilifeAutomationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716398296424</updated>
       <workItem from="1716398297483" duration="695000" />
-      <workItem from="1716408982363" duration="2285000" />
+      <workItem from="1716408982363" duration="4008000" />
     </task>
     <task id="LOCAL-00001" summary="WafilifeAutomationTest">
       <option name="closed" value="true" />
@@ -179,7 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716409806858</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WafilifeAutomationTest">
+      <option name="closed" value="true" />
+      <created>1716411623126</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716411623126</updated>
+    </task>
+    <task id="LOCAL-00005" summary="WafilifeAutomationTest">
+      <option name="closed" value="true" />
+      <created>1716411764358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716411764359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
