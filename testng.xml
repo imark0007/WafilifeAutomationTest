@@ -3,6 +3,15 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/JetBrains/WafilifeAutomationTest">
         <classes>
+            <class name="testCases.TestCases">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                    <include name="testLoginWithInValidCredentials"/>
+                    <include name="testLoginWithValidEmailButWrongPassword"/>
+                    <include name="testLoginWithValidPasswordButWrongEmail"/>
+                    <include name="testLoginWithOutEmailAndPassword"/>
+                </methods>
+            </class>
             <class name="testCases.TestLogin">
                 <methods>
                     <include name="testLoginWithValidCredentials"/>
