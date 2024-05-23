@@ -1,5 +1,6 @@
 # WafilifeAutomationTest
 ## Web Automation Testing Framework
+![Allure-Report](https://github.com/imark0007/WafilifeAutomationTest/assets/53122092/86362949-ad74-43c8-a605-3ffd6c8ce9af)
 
 This repository contains a lightweight automation testing framework for web applications using Selenium WebDriver and TestNG.
 
