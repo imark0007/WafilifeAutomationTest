@@ -4,10 +4,8 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -77,8 +75,11 @@ public class TestLogin extends BrowserSetup {
         shippingPage.clickOnElement(shippingPage.selectArea);
         shippingPage.writeElement(shippingPage.addressInputBox, shippingPage.address);
         shippingPage.clickOnElement(shippingPage.shippingChargeCourier);
-//        shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
-//        Thread.sleep(2000);
+
+//      Note: drop down menu didn't respond in line 69 and 70
+//      shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
+
+        Thread.sleep(2000);
         shippingPage.clickOnElement(shippingPage.paymentOption);
 
 

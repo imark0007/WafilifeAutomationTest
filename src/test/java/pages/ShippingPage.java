@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class ShippingPage extends BasePage{
 
-
+    // if needed
     public String shippingUrl = "https://www.wafilife.com/checkout";
 
     public String name = "Automated User";
@@ -17,9 +17,10 @@ public class ShippingPage extends BasePage{
     public By selectDistrict = By.xpath("//span[@id='select2-billing_state-container']");
     public By selectArea = By.xpath("//select[@id='billing_area']");
     public By addressInputBox= By.xpath("//textarea[@id='billing_address_1']");
-    public By paymentOption = By.xpath("//input[@id='payment_method_bkash']");
+    public By paymentOption = By.xpath("//input[@id='payment_method_rocket']");
     public By myAccountButton = By.xpath("//div[@class='login-links']//a[@title='আমার অ্যাকাউন্ট'][contains(text(),'আমার অ্যাকাউন্ট')]");
     public By logOutButton = By.xpath("//a[contains(text(),'লগআউট')]");
     public By shippingChargeCourier = By.xpath("//input[@id='shipping_method_0_flat_rate8']");
-//    public By getShippingChargePostOffice = By.xpath("//input[@id='shipping_method_0_flat_rate12']");
+
+
 }

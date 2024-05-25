@@ -66,6 +66,7 @@ public class TestCases extends BrowserSetup {
         logInPage.writeElement(logInPage.emailInputBox, logInPage.email);
         logInPage.writeElement(logInPage.passwordInputBox, logInPage.wrongPassword);
         logInPage.clickOnElement(logInPage.logInButton);
+        Assert.assertTrue(logInPage.displayStatus(logInPage.errorMessage));
         Assert.assertFalse(homePage.displayStatus(homePage.logOutButton));
 
     }
@@ -76,13 +77,26 @@ public class TestCases extends BrowserSetup {
         logInPage.writeElement(logInPage.emailInputBox, logInPage.wrongEmail);
         logInPage.writeElement(logInPage.passwordInputBox, logInPage.password);
         logInPage.clickOnElement(logInPage.logInButton);
+        Assert.assertTrue(logInPage.displayStatus(logInPage.errorMessage));
         Assert.assertFalse(homePage.displayStatus(homePage.logOutButton));
 
     }
+
     @Test(priority = 4)
+    public void testLoginWithValidPasswordButInvalidEmail() {
+
+        logInPage.writeElement(logInPage.emailInputBox, logInPage.invalidEmail);
+        logInPage.writeElement(logInPage.passwordInputBox, logInPage.password);
+        logInPage.clickOnElement(logInPage.logInButton);
+        Assert.assertTrue(logInPage.displayStatus(logInPage.errorMessage));
+        Assert.assertFalse(homePage.displayStatus(homePage.logOutButton));
+
+    }
+    @Test(priority = 5)
     public void testLoginWithOutEmailAndPassword() {
 
         logInPage.clickOnElement(logInPage.logInButton);
+        Assert.assertTrue(logInPage.displayStatus(logInPage.errorMessage));
         Assert.assertFalse(homePage.displayStatus(homePage.logOutButton));
 
     }
