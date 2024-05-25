@@ -76,7 +76,7 @@ public class TestLogin extends BrowserSetup {
         shippingPage.writeElement(shippingPage.addressInputBox, shippingPage.address);
         shippingPage.clickOnElement(shippingPage.shippingChargeCourier);
 
-//      Note: drop down menu didn't respond in line 69 and 70
+//      Note: drop down menu didn't respond in line 67 and 68
 //      shippingPage.clickOnElement(shippingPage.getShippingChargePostOffice);
 
         Thread.sleep(2000);
