@@ -87,37 +87,62 @@ git clone https://github.com/imark0007/WafilifeAutomationTest.git
 allure generate .\allure-results\ --clean
 allure open .\allure-report\
 ```
+6. Run this test with mvn
+```
+mvn clean
+mvn test
+mvn test -D"browser=chrome"
+
+```
+7. Using Suite XML Files
+```
+mvn test -D"browser=chrome" -D"xmlFileName=testng.xml"
+```
 ##### Maven Dependencies
 
 ###### Selenium TestNG Webdriver Manager
 
 ```xml
- <dependencies>
+<dependencies>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.19.1</version>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.19.1</version>
     </dependency>
 
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>RELEASE</version>
-      <scope>test</scope>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>RELEASE</version>
+        <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.10.2</version>
-      <scope>test</scope>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.10.2</version>
+        <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
     <dependency>
-      <groupId>io.qameta.allure</groupId>
-      <artifactId>allure-testng</artifactId>
-      <version>2.27.0</version>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.27.0</version>
     </dependency>
-  </dependencies>
+</dependencies>
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+            <suiteXmlFiles>
+                <suiteXmlFile>testng.xml</suiteXmlFile>  <!--   for specific xml file :  <suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
+            </suiteXmlFiles>
+        </configuration>
+    </plugin>
+</plugins>
+</build>
 ```
