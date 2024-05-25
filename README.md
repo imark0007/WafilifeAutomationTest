@@ -24,7 +24,7 @@ Follow these steps to set up your development environment and start using Seleni
     - [Eclipse](https://www.eclipse.org/downloads/packages/release/2024-03/r/eclipse-ide-java-developers)
     - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) : I personally used this IDEA
     - [Spring Tools](https://spring.io/tools)
-3. [Apache Maven](https://maven.apache.org/download.cgi)
+3. [Apache Maven](https://maven.apache.org/download.cgi) 
 
 ### Installation
 
